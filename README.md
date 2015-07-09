@@ -1,2 +1,9 @@
-# newscentersystem
-CISE of NEWS CENTER ADMIN SYSTEM
+# 欢迎使用山东科大信息学院新闻中心管理系统
+## CISE of NEWS CENTER ADMIN SYSTEM
+感谢使用本系统，本系统由山东科技大学信息科学与工程学院新闻中心开发，主要用于我院新闻发布、更新及统计工作与院新闻中心内部办公。
+
+本系统是V0.1 Demo版本，如有系统问题请及时联系系统管理员及开发者：
+
+Email: zhn038@163.com Tel: +8613687671402
+
+这个系统安全性不高，各位有什么建议可以fork了玩一玩，欢迎大牛打脸😄。
