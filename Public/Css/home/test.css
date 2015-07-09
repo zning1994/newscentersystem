@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+body	{
+	width:	950px;
+	/*高度定不下就暂时不写*/
+	height:	800px;
+	margin: 	0 auto;
+	background-color:#66c;
+	border:	1px solid red;/*注意Border属于Body，占1个像素*/
+	font-size:	15px;
+}
+
+.top{
+	width:	950px;
+	height:	22px;
+	background-color:pink;
+}
+
+/*登录区域*/
+.login{
+	width:	416px;
+	height:	22px;
+	background-color:green;
+	float:		left;
+}
+
+/*设置为首页*/
+.indexpage{
+	width:	105px;
+	height:	22px;
+	background-color:gray;
+	float:		left;
+	margin-left:50px;
+}
+
+/*超链接*/
+.myhref{
+	width:	280px;
+	height:	20px;
+	float:		right;
+	background-color:#b4b4b4;
+}
+
+/*logo区域*/
+
+.logo_region{
+	width:	950px;
+	height:	100px;
+	background-color:#0ff;
+	margin-top:5px;
+}
+
+.logo_img{
+	width:	324px;
+	height:	100px;
+	background-color:yellow;
+	float:		left;
+}
+
+.logo_text{
+	width:	291px;
+	height:	38px;
+	background:red;
+	float:		left;
+	margin-left:15px;
+	margin-top:62px;
+}
+
+
+/*广告部分*/
+
+.ad{
+	width:	950px;
+	height:	212px;
+	background-color:pink;
+	margin-top:5px;
+}
+
+.ad_stu{
+	width:	126px;	
+	height:	196px;
+	background-color:gray;
+	margin:10px 0 0 3px;
+	float:left;
+}

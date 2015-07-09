@@ -1,0 +1,9 @@
+$id =
+iconv ( 'utf-8', 'gb2312', $row ['subject'] );
+iconv ( 'utf-8', 'gb2312', $row ['zuozhe'] );
+iconv ( 'utf-8', 'gb2312', $row ['opendate'] );
+iconv ( 'utf-8', 'gb2312', $row ['wordss'] );
+iconv ( 'utf-8', 'gb2312', $row ['kedabao'] );
+iconv ( 'utf-8', 'gb2312', $row ['kdbqishu'] );
+iconv ( 'utf-8', 'gb2312', $row ['author'] );
+iconv ( 'utf-8', 'gb2312', $row ['lastmodifytime'] );

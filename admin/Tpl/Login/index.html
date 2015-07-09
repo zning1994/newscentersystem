@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>欢迎使用{$title}</title>
+<link href="__PUBLIC__/Css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script>var __links = document.querySelectorAll('a');function __linkClick(e) { parent.window.postMessage(this.href, '*');} ;for (var i = 0, l = __links.length; i < l; i++) {if ( __links[i].getAttribute('data-t') == '_blank' ) { __links[i].addEventListener('click', __linkClick, false);}}</script>
+<script src="__PUBLIC__/Js/jquery.min.js"></script>
+<script>
+		function show(obj){
+			obj.src="__APP__/Common/verify/random/"+Math.random();
+		}
+</script>
+</head>
+<body>
+<!-- contact-form -->
+<div class="message warning">
+  <div class="inset">
+    <div class="login-head">
+      <h1>山东科大信息学院新闻中心管理系统</h1>
+      <!--<div class="alert-close"> </div>--> 
+    </div>
+    <form action="__URL__/login" method="POST">
+      <li>
+        <input type="text" class="text" name="username">
+        <a href="#" class=" icon user"></a> </li>
+      <div class="clear"> </div>
+      <li>
+        <input type="password" name="password">
+        <a href="#" class="icon lock"></a> </li>
+      <div class="clear"> </div>
+      <li>
+        <input type="text" class="text" name="verify">
+        <a href="#" class="icons"><img src="__APP__/Common/verify"/ onclick="show(this)"></a> </li>
+      <div class="clear"> </div>
+      <div class="submit">
+        <input type="submit" onclick="myFunction()" value="登陆" >
+        <!-- <h4><a href="#">Lost your Password ?</a></h4> -->
+        
+        <div class="clear"> </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+<div class="clear"> </div>
+<!--- footer --->
+<div class="footer">
+  <!--<p>Copyright &copy; 2015.</p>-->
+</div>
+</body>
+</html>

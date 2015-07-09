@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title>{$title}</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <link href="__PUBLIC__/assets/css/dpl-min.css" rel="stylesheet" type="text/css" />
+  <link href="__PUBLIC__/assets/css/bui-min.css" rel="stylesheet" type="text/css" />
+   <link href="__PUBLIC__/assets/css/main-min.css" rel="stylesheet" type="text/css" />
+ </head>
+ <body>
+
+  <div class="header">
+    
+      <div class="dl-title">
+          <span class="lp-title-port">山东科大信息学院新闻中心管理系统</span>
+        </a>
+      </div>
+
+    <div class="dl-log">欢迎您，<span class="dl-log-user"  title="当前用户:{$username}">{$username}</span><a href="__URL__/quit" title="退出系统" class="dl-log-quit">[退出]</a>
+    </div>
+  </div>
+   <div class="content">
+    <div class="dl-main-nav">
+      <div class="dl-inform"><div class="dl-inform-title">贴心小秘书<s class="dl-inform-icon dl-up"></s></div></div>
+      <ul id="J_Nav"  class="nav-list ks-clear">
+        <li class="nav-item dl-selected"><div class="nav-item-inner nav-home">首页</div></li>
+        <li class="nav-item"><div class="nav-item-inner nav-order">通讯管理</div></li>
+        <li class="nav-item"><div class="nav-item-inner nav-supplier">成员管理</div></li>
+        <li class="nav-item"><div class="nav-item-inner nav-inventory">消息管理</div></li>
+      </ul>
+    </div>
+    <ul id="J_NavContent" class="dl-tab-conten">
+
+    </ul>
+   </div>
+  <script type="text/javascript" src="__PUBLIC__/assets/js/jquery-1.8.1.min.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/assets/js/bui.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/assets/js/config.js"></script>
+
+  <script>
+    BUI.use('common/main',function(){
+      var config = [{
+          id:'menu', 
+          homePage : 'welcome',
+          menu:[{
+              text:'欢迎',
+              items:[
+			  	{id:'welcome',text:'后台首页',href:'__PUBLIC__/main/welcome.html',closeable : false},
+              ]
+            },{
+              text:'设置操作',
+              items:[
+                {id:'articlefix',text:'通讯设置',href:'__PUBLIC__/main/member.html'},
+                {id:'memberfix',text:'成员设置',href:'__PUBLIC__/main/menu.html'},
+                {id:'messagefix',text:'消息设置',href:'__PUBLIC__/main/second-menu.html'} 
+              ]
+            },{
+              text:'导出选项',
+              items:[
+                {id:'coutfix',text:'导出选项',href:'__PUBLIC__/main/dyna-menu.html'} 
+              ]
+            }]
+          },{
+            id:'mesg',
+			homePage : 'messagefix',
+            menu:[{
+                text:'通讯管理',
+                items:[
+                  {id:'messagefix',text:'通讯内容',href:'__PUBLIC__/form/code.html'},
+                  {id:'messagein',text:'通讯添加',href:'__ROOT__/index.php/Article/index'},
+                  {id:'pictures',text:'照片管理',href:'__PUBLIC__/form/example.html'},
+                  {id:'mail',text:'邮箱管理',href:'__PUBLIC__/form/introduce.html'}
+                ]
+              },{
+                text:'通讯网站发布',
+                items:[
+                  {id:'sdkdnews',text:'发布到科大新闻网',href:'http://www.sdkd.net.cn/admin/index.php'},
+                  {id:'cise',text:'发布到学院网',href:'http://cise.sdust.edu.cn/web2010/admincp.php'},
+                  {id:'bjx',text:'发布到北极星网',href:'http://bjx.sdkd.net.cn/admin/'},//有跳出
+                  {id:'xgc',text:'发布到学工处',href:'http://xsgzb.sdkd.net.cn/admin/index.asp'}//直接跳转
+                ]
+              }]
+          },{
+            id:'memb',
+			homePage : 'memfix',
+            menu:[{
+                text:'成员管理',
+                items:[
+                  {id:'memfix',text:'成员管理',href:'__PUBLIC__/search/code.html'},
+                  {id:'memin',text:'成员添加',href:'__PUBLIC__/search/example.html'},
+                  {id:'groupfix',text:'分组管理',href:'__PUBLIC__/search/example.html'},
+                  {id:'groupin',text:'分组添加',href:'__PUBLIC__/search/example.html'}
+                ]
+              }]
+          },{
+            id:'text',
+			homePage : 'textfix',
+            menu:[{
+                text:'消息管理',
+                items:[
+                  {id:'textfix',text:'消息管理',href:'__PUBLIC__/detail/code.html'},
+                  {id:'textin',text:'消息添加',href:'__PUBLIC__/detail/example.html'},
+                  {id:'textpush',text:'消息推送',href:'__PUBLIC__/detail/introduce.html'}
+                ]
+              }]
+          }];
+      new PageUtil.MainPage({
+        modulesConfig : config
+      });
+    });
+  </script>
+</body>
+</html>
