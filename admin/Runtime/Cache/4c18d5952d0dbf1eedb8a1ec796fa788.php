@@ -91,7 +91,7 @@
             menu:[{
                 text:'成员管理',
                 items:[
-                  {id:'memfix',text:'成员管理',href:'__PUBLIC__/search/code.html',closeable : false},
+                  {id:'memfix',text:'成员管理',href:'__ROOT__/index.php/User/manage',closeable : false},
                   {id:'memin',text:'成员添加',href:'__ROOT__/index.php/User/index'}
                 ]
               }]

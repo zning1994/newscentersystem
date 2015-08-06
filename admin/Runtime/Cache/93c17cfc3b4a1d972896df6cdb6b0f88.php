@@ -6,10 +6,6 @@
 <link href="__PUBLIC__/assets/css/dpl-min.css" rel="stylesheet" type="text/css" />
 <link href="__PUBLIC__/assets/css/bui-min.css" rel="stylesheet" type="text/css" />
 <link href="__PUBLIC__/assets/css/page-min.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="__PUBLIC__/Js/admin/jquery-1.3.2.min.js"></script>
-<script type="text/javascript" src="__PUBLIC__/Js/admin/simpla.jquery.configuration.js"></script>
-<script type="text/javascript" src="__PUBLIC__/Js/admin/facebox.js"></script>
-<script type="text/javascript" src="__PUBLIC__/Js/admin/jquery.wysiwyg.js"></script>
 <script type="text/javascript" src="__PUBLIC__/assets/js/jquery-1.8.1.min.js"></script> 
 <script type="text/javascript" src="__PUBLIC__/assets/js/bui-min.js"></script> 
 <script type="text/javascript" src="__PUBLIC__/assets/js/config-min.js"></script> 

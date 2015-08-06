@@ -2,7 +2,7 @@
 
 $arr1=array(
 	//'配置项'=>'配置值'
-	'URL_MODEL'	=>3,//path-info 模式
+	'URL_MODEL'	=>4,//path-info 模式
 	//'SHOW_PAGE_TRACE' =>true,   
 	//'SHOW_RUN_TIME' =>true,   //显示运行时间
 	//'SHOW_ADV_TIME' =>true,   //显示详细的运行时间
