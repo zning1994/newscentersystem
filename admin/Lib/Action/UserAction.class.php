@@ -1,5 +1,15 @@
 ﻿<?php
-
+/*
+ * UserModel.class.php
+ * 自定义用户管理类
+ *
+ * 功能：1.完成后台登录账户管理的实现
+ * NewsCenterSystem
+ *
+ * Created by ZNing on 15/2/1.
+ * Copyright (c) 2015年 ZNing. All rights reserved.
+ *
+ */
 class UserAction extends Action {
 	
 	private  $user_item;
@@ -22,7 +32,7 @@ class UserAction extends Action {
 		}
 			$this->display ();
 		} else {
-			$this->error ( '您好，请先登录！！！', U ( '/Login/index/' ) );
+			$this->error ( '您好，请先登录！', U ( '/Login/index/' ) );
 		}
 	}
 	

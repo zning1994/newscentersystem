@@ -1,11 +1,23 @@
 <?php
-
+/*
+ * CommonAction.class.php
+ * 自定义公共使用类
+ *
+ * 功能：1.完成验证码方法的实现
+ * NewsCenterSystem
+ *
+ * Created by ZNing on 15/2/1.
+ * Copyright (c) 2015年 ZNing. All rights reserved.
+ *
+ */
 class CommonAction extends  Action{
 	
 	
 	function verify(){
 		//导入验证码类
 		import("ORG.Util.Image");
+
+		//生成验证码
 		
 		/*
 		 * 参数1：验证码长度，默认4

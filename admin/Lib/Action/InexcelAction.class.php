@@ -1,5 +1,16 @@
 <?php
-
+/*
+ * InexcelAction.class.php
+ * 自定义导入Excel csv类
+ *
+ * 功能：1.完成通讯稿件统计导入（csv格式）
+ * 		2.完成新闻中心成员信息导入（csv格式）
+ * NewsCenterSystem
+ *
+ * Created by ZNing on 15/2/1.
+ * Copyright (c) 2015年 ZNing. All rights reserved.
+ *
+ */
 class InexcelAction extends Action {
 	function index() {
 		if (session ( '?username' )) {
@@ -8,13 +19,13 @@ class InexcelAction extends Action {
 			//配置页面显示内容
 			$this->assign ( 'title', '山东科大信息学院新闻中心管理系统' );
 			$this->assign ( 'btn_ok_act', 'fix' );
-			$this->assign ( 'btn_ok_text', '导出csv' );
+			$this->assign ( 'btn_ok_text', '导入csv' );
 			$this->display ();
 		
 		} 
 
 		else {
-			$this->error ( '您好，请先登录！！！', U ( '/Login/index/' ) );
+			$this->error ( '您好，请先登录！', U ( '/Login/index/' ) );
 		}
 	}
 	

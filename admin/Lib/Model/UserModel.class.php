@@ -1,8 +1,14 @@
 <?php
-
 /*
- * 自定义User模型类
+ * UserModel.class.php
+ * 自定义用户模型类
+ *
  * 功能：1.完成自动验证功能
+ * NewsCenterSystem
+ *
+ * Created by ZNing on 15/2/1.
+ * Copyright (c) 2015年 ZNing. All rights reserved.
+ *
  */
 class UserModel extends Model{	
 	
@@ -25,7 +31,7 @@ class UserModel extends Model{
 	
 	//字段长度验证回调函数(ThinkPHP会自动帮我们传递参数)
 	function callback_checklen($data){
-		if(strlen($data)>15 || strlen($data)<6){
+		if(strlen($data)>35 || strlen($data)<0){
 			return false;
 		}
 		return true;

@@ -1,8 +1,15 @@
 <?php
-/**
-     * @类		MessagefixAction
-     * @功能	后台通讯管理界面控制器
-*/
+/*
+ * MessagefixAction.class.php
+ * 自定义消息管理展示类
+ *
+ * 功能：1.后台消息管理界面控制器
+ * NewsCenterSystem
+ *
+ * Created by ZNing on 15/2/1.
+ * Copyright (c) 2015年 ZNing. All rights reserved.
+ *
+ */
 class MessagefixAction extends Action {	
 	
 	private  $message_item;

@@ -1,8 +1,15 @@
 ﻿<?php
-/**
-     * @类		IndexAction
-     * @功能	后台首页控制器
-*/
+/*
+ * IndexAction.class.php
+ * 后台首页控制器类
+ *
+ * 功能：1.完成后台首页展示与用户登录账户机制的实现
+ * NewsCenterSystem
+ *
+ * Created by ZNing on 15/2/1.
+ * Copyright (c) 2015年 ZNing. All rights reserved.
+ *
+ */
 class IndexAction extends Action {	
 	/**
      * @函数	index

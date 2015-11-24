@@ -1,5 +1,15 @@
 <?php
-
+/*
+ * MessageAction.class.php
+ * 自定义消息页面类
+ *
+ * 功能：1.完成消息内容录入及编辑
+ * NewsCenterSystem
+ *
+ * Created by ZNing on 15/2/1.
+ * Copyright (c) 2015年 ZNing. All rights reserved.
+ *
+ */
 class MessageAction extends Action{
 	
 	private  $message_item;
@@ -29,7 +39,7 @@ class MessageAction extends Action{
 		
 		else
 		{
-			$this->error('您好，请先登录！！！',U('/Login/index/'));
+			$this->error('您好，请先登录！',U('/Login/index/'));
 		}	
 	}
 	
@@ -48,15 +58,9 @@ class MessageAction extends Action{
 			$this->display ();
 		} 
 		else {
-			$this->error ( '您好，请先登录！！！', U ( '/Login/index/' ) );
+			$this->error ( '您好，请先登录！', U ( '/Login/index/' ) );
 		}
 	}
-	
-	
-	
-	
-	
-	
 	
 	/**
      * @函数	add

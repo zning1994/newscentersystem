@@ -1,4 +1,17 @@
 <?php
+/*
+ * ArticleModel.class.php
+ * 自定义文章模型类
+ *
+ * 功能：1.完成文章标题自动验证功能
+ * 		2.文章字段长度验证回调函数
+ * 		3.文章自动完成，在create时自动执行
+ * NewsCenterSystem
+ *
+ * Created by ZNing on 15/2/1.
+ * Copyright (c) 2015年 ZNing. All rights reserved.
+ *
+ */
 class ArticleModel extends Model{
 	
 	//标题自动验证

@@ -1,4 +1,17 @@
 <?php
+/*
+ * ArticleModel.class.php
+ * 自定义消息模型类
+ *
+ * 功能：1.完成消息标题自动验证功能
+ * 		2.消息字段长度验证回调函数
+ * 		3.消息自动完成，在create时自动执行
+ * NewsCenterSystem
+ *
+ * Created by ZNing on 15/2/1.
+ * Copyright (c) 2015年 ZNing. All rights reserved.
+ *
+ */
 class MessageModel extends Model{
 	
 	//标题自动验证

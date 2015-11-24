@@ -1,8 +1,15 @@
 <?php
-/**
-     * @类		ArticlefixAction
-     * @功能	后台通讯管理界面控制器
-*/
+/*
+ * ArticlefixAction.class.php
+ * 自定义文章管理展示类
+ *
+ * 功能：1.后台通讯管理界面控制器
+ * NewsCenterSystem
+ *
+ * Created by ZNing on 15/2/1.
+ * Copyright (c) 2015年 ZNing. All rights reserved.
+ *
+ */
 class ArticlefixAction extends Action {	
 	/**
      * @函数	Articlefix
@@ -22,7 +29,7 @@ class ArticlefixAction extends Action {
 		
 			//分页显示文章列表，每页8篇文章
 			import('ORG.Util.Page');
-			$page=new Page($count);//后台管理页面默认一页显示8条文章记录
+			$page=new Page($count,999);//后台管理页面默认一页显示所有文章记录
 	
             $page->setConfig('prev', "&laquo; Previous");//上一页
             $page->setConfig('next', 'Next &raquo;');//下一页
@@ -52,12 +59,12 @@ class ArticlefixAction extends Action {
 			$this->error('您好，请先登录！！！',U('/Login/index/'));
 		}	
     }
+
     /**
      * @函数	delete
      * @功能	删除文章
      */
     function delete(){
-    	
     	//跳转至Article控制器来实现
     	if($_GET['id']){
     		redirect(U('/Article/delete/id/'.$_GET['id']),0, '删除文章');
@@ -72,6 +79,7 @@ class ArticlefixAction extends Action {
      * @功能	编辑文章
      */
     function edit(){
+		//跳转至Article控制器来实现
     	if($_GET['id']){
     		redirect(U('/Article/edit/id/'.$_GET['id']),0, '编辑文章');
     	}
@@ -99,7 +107,7 @@ class ArticlefixAction extends Action {
 			}		
 			
 			//文章标题过长时裁剪
-			if(strlen($list[$key]['subject'])>800){
+			if(strlen($list[$key]['subject'])>8000){
 					$list[$key]['subject']=$this->cutString($list[$key]['subject'],0,20).'...';				
 			}
 		}

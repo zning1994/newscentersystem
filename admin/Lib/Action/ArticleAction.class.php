@@ -1,5 +1,15 @@
 ﻿<?php
-
+/*
+ * ArticleAction.class.php
+ * 自定义文章页面类
+ *
+ * 功能：1.完成通讯稿件录入及编辑
+ * NewsCenterSystem
+ *
+ * Created by ZNing on 15/2/1.
+ * Copyright (c) 2015年 ZNing. All rights reserved.
+ *
+ */
 class ArticleAction extends Action{
 	
 	private  $article_item;
@@ -29,7 +39,7 @@ class ArticleAction extends Action{
 		
 		else
 		{
-			$this->error('您好，请先登录！！！',U('/Login/index/'));
+			$this->error('您好，请先登录！',U('/Login/index/'));
 		}	
 	}
 	
@@ -39,10 +49,10 @@ class ArticleAction extends Action{
      */
 	function add(){
 		header("Content-Type:text/html; charset=utf-8");
-	
-		$article=D('Article');		
+
+		$article=D('Article');
 		if($article->create()){
-			
+
 			$article->message		=$_POST['editorValue'];
 			$article->author		=session('username');
 			$article->createtime	=date("Y-m-d H:i:s", time());
@@ -52,24 +62,25 @@ class ArticleAction extends Action{
 			$article->kedabao		=$_POST['kedabao'];
 			$article->kdbqishu		=$_POST['kdbqishu'];
 			$article->wordss		=$_POST['wordss'];
-					
+
 			//将文章写入数据库
 			if($article->add()){
 				$this->success('文章添加成功，返回上级页面',U('Article/index'));
 			}else{
 				$this->error('文章添加失败，返回上级页面');
 			}
-			
+
 		}else{
 			$this->error($article->getError());
-		}	
+		}
 	}
-	
+
 	/**
      * @函数	delete
      * @功能	删除文章
      */
-	function delete(){		
+	function delete(){
+		//承接Articlefix控制器
     	$article=M('article');
 		if($article->delete($_GET['id'])){
 			$this->success('文章删除成功');
@@ -77,12 +88,13 @@ class ArticleAction extends Action{
 			$this->error($article->getLastSql());
 		}
 	}
-	
+
 	/**
      * @函数	edit
-     * @功能	删除文章
+     * @功能	编辑文章
      */
 	function edit(){
+		//承接Articlefix控制器
 		header("Content-Type:text/html; charset=utf-8");
 		if($_GET['id']){
 			redirect(U('/Article/index/id/'.$_GET['id']),0, '编辑文章');
