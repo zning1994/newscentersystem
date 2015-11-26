@@ -9,7 +9,7 @@
 title: 新闻中心管理系统动态网
 email: zning@sdust.edu.cn
 description: > # this means to ignore newlines until "baseurl:"
-感谢使用本系统，本系统由山东科技大学信息科学与工程学院新闻中心开发，主要用于我院新闻发布、更新及统计工作与院新闻中心内部办公。本系统是V0.1 Demo版本，如有系统问题请及时联系系统管理员及开发者：Email: zning@sdust.edu.cn Tel: +8613687671402 这个系统安全性不高，各位有什么建议可以fork了玩一玩，欢迎大牛打脸😄。
+    感谢使用本系统，本系统由山东科技大学信息科学与工程学院新闻中心开发，主要用于我院新闻发布、更新及统计工作与院新闻中心内部办公。本系统是V0.1 Demo版本，如有系统问题请及时联系系统管理员及开发者：Email: zning@sdust.edu.cn Tel: +8613687671402 这个系统安全性不高，各位有什么建议可以fork了玩一玩，欢迎大牛打脸。
 baseurl: "/newscentersystem" # the subpath of your site, e.g. /blog
 url: "http://zning.me" # the base hostname & protocol for your site
 twitter_username: z_ning
